@@ -38,6 +38,6 @@ ChanneldUE部分支持[网络相关性](https://docs.unrealengine.com/4.27/zh-CN
 当一个同步Actor离开玩家的兴趣范围时，客户端会调用该Actor的IsNetRelevantFor方法来判断是否跟玩家相关，如果相关，则不销毁该Actor。要开启网络相关性的调用判断，需要在主菜单`编辑 -> 项目设置 -> 插件 -> Channeld -> Spatial -> Client Interest`中勾选`Use Net Relavancy For Uninterested Actors`。
 
 ## 框架和子系统的跨服支持
-虚幻引擎假设所有的模拟都在一个服务器上发生，所以没有跨服的概念。UE中的Gameplay框架、物理系统、AI系统、Gameplay技能系统等，都是基于这个逻辑实现的。然而在channeld中，如果使用了空间频道，模拟的对象可能在多个服务器之间发生迁移。ChanneldUE目前仅实现了Gameplay框架的跨服迁移（PlayerController，PlayerState等），其它框架和系统需要额外的集成才能支持跨服迁移，否则会因为丢失状态而发生难以预料的结果。
+虚幻引擎假设所有的模拟都在一个服务器上发生，所以没有跨服的概念。UE中的Gameplay框架、物理系统、AI系统、Gameplay技能系统等，都是基于这个逻辑实现的。然而在channeld中，如果使用了空间频道，模拟的对象可能在多个服务器之间发生迁移。ChanneldUE目前仅实现了Gameplay框架（PlayerController，PlayerState等）和刚体物理的跨服迁移，其它框架和系统需要额外的集成才能支持跨服迁移，否则会因为丢失状态而发生难以预料的结果。
 
-这就意味着，在实现集成之前，你的游戏需要在设计上限制这些框架和系统发生跨服迁移，例如增加空气墙以防止将刚体推过服务器之间的边界，或者只允许AI在服务器内的地图区域进行巡逻。
+这就意味着，在实现集成之前，你的游戏需要在设计上限制这些框架和系统发生跨服迁移，例如禁止在服务器边界进行基于GAS实现的战斗，或者只允许AI在服务器内的地图区域进行巡逻。
