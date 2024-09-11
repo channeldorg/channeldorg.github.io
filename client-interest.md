@@ -7,8 +7,8 @@ Client interest refers to the game information that the client player can see an
 
 In different game genres, game modes, or play mode, the client's interest may vary greatly, for example:
 - In the top-down view, you can see a large area of the city or battlefield, and you can also zoom in the camera to see the details on the ground
-- In the third-person camera, you can see things in front of the player character, and you can also rotate the camera to see the information behind the player character
-- In a shooting game, when you open the aiming mirror of the gun, you can see the details far away, but at this time you cannot see anything behind you
+- In the third-person camera, you can see things in front of the player character, and you can also rotate the camera to observe the things behind the player character
+- In a shooting game, when you open the telescope sight of the gun, you can see the details far away, but at this time you cannot see anything outside the telescope sight
 
 While there are many ways to implement interest management in Unreal Engine, ChanneldUE implements a new framework to support the large open world multi-server architecture.
 
@@ -30,6 +30,7 @@ ChanneldUE has built-in the following types of interest areas (AOI, Area Of Inte
 - Static locations. The location point will be mapped to the spatial channel, so it is equivalent to subscribing to a fixed spatial channel. This interest area type can be used to focus on a specific area on the map (such as the flag in the capture the flag mode).
 
 The following table lists the parameters of the interest area and the types of interest areas to which they apply:
+
 | Parameter | Default Value | Description | Applicable Types |
 | ------ | ------ | ------ | ------ |
 | `Preset Name` | Empty | Preset name. Used to find when calling the `ClientInterestManager` API | All types |
