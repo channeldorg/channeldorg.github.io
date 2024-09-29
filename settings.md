@@ -18,7 +18,7 @@ This is the runtime settings. Can be found in `Edit > Project Settings > Plugins
 | `Use Receive Thread` | true | Whether to use a separate thread to receive data from channeld. |
 | `Disable Handshaking` | true | Whether to skip the default UE handshake process. The client must connect to and be verified by channeld before entering the UE server. **In UE5, setting it to false (i.e. enabling the default handshake process) will cause the client to fail to enter the server.** |
 | `Set Internal Ack` | true | Whether to disable the UE built-in heartbeat mechanism. It is recommended to turn it on when using reliable connections (such as TCP) to reduce bandwidth consumption. |
-| `Rpc Redirection Max Retries` | true | The maximum number of retries for RPC redirection. When a server fails to process an RPC, it will try to forward the RPC to a server that can process it. When this value is set to 0, no redirection will occur, which will cause slight jitter in cross-server movement; when this value is set too high, the RPC may be sent back and forth between servers, causing network congestion. |
+| `Rpc Redirection Max Retries` | 1 | The maximum number of retries for RPC redirection. When a server fails to process an RPC, it will try to forward the RPC to a server that can process it. When this value is set to 0, no redirection will occur, which will cause slight jitter in cross-server movement; when this value is set too high, the RPC may be sent back and forth between servers, causing network congestion. |
 
 ### Spatial
 | Setting | Default Value | Description |
@@ -62,9 +62,10 @@ This is the editor settings. Can be found in `Edit > Editor Preferences > Plugin
 * `-logfile=` Log file path (default: none)
 * `-mcb=` The maximum number of bits that can be used by the connection ID assigned to each connection (default: 32)
 * `-sfsm=` The path of the server FSM configuration file (default: "config/server_authoratative_fsm.json")
-* `-cfsm=` The path of the client FSM configuration file (default: "config/client_non_authoratative_fsm.json")
+* `-cfsm=` The path of the client FSM configuration file (default: "config/client_authoratative_fsm.json")
 * `-scc=` The path of the spatial controller configuration file. In addition to the default 2x2 spatial controller configuration, channeld also has built-in 4x1 and 6x6 spatial controller configurations
-* `-chs=` The path of the channel configuration file (default: "config/channel_settings_hifi.json")
+* `-chs=` The path of the channel configuration file (default: "config/channel_settings_ue.json")
+* `-scr=` Enable the server recovery? (default: false)
 
 ### Server
 | Setting | Default Value | Description |
