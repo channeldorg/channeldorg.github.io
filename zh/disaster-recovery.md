@@ -69,6 +69,6 @@ func (ext *PrivateChannelDataExtension) GetRecoveryDataMessage() common.Message 
 最后，在`UChannelDataView::RecoverChannelData`重载函数里读取`ChannelRecoveryData`消息，从而恢复服务器状态。
 
 ## channeld网关服务
-channeld网关服务尚未实现灾难恢复功能。这意味着，如果channeld网关服务崩溃，所有状态都会丢失；如果要恢复系统服务，则需要重启channeld网关服务和所有专用服务器，并重新连接客户端。
+channeld网关服务尚未实现灾难恢复功能。这意味着，如果channeld网关服务崩溃，所有状态都会丢失；系统重新上线需要重启channeld网关服务和所有专用服务器，并重新连接客户端。
 
 计划在未来的版本中，首先实现channeld的状态持久化，然后实现连接和订阅的恢复。

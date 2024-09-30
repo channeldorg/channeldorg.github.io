@@ -67,3 +67,9 @@ Then, register the channel data extension type in `examples\channeld-ue-tps\main
 ```
 
 Finally, read the `ChannelRecoveryData` message in the `UChannelDataView::RecoverChannelData` override function to restore the server state.
+
+## channeld Gateway Service
+The channeld gateway service has not yet implemented disaster recovery. This means that if the channeld gateway service crashes, all states will be lost. In order to make the system back online, you need to restart the channeld gateway service and all dedicated servers. The clients need to reconnect too.
+
+In future versions, the plan is to first implement the state persistence of channeld, and then implement the recovery of connections and subscriptions.
+
