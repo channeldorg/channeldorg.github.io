@@ -15,6 +15,7 @@
 ** [和原生UE的差异以及替代方案](zh/native-ue-comparison.md)
 ** [客户端兴趣](zh/client-interest.md)
 ** [性能测试](zh/benchmark.md)
+** [灾难恢复](zh/disaster-recovery.md)
 
 * [故障排查](zh/troubleshooting.md)
 

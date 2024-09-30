@@ -16,6 +16,7 @@
 ** [Comparison with the native UE and alternatives](native-ue-comparison.md)
 ** [Client Interest](client-interest.md)
 ** [Benchmark](benchmark.md)
+** [Disaster Recovery](disaster-recovery.md)
 
 * [Troubleshooting](troubleshooting.md)
 

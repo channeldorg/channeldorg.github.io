@@ -1,5 +1,5 @@
 # Disaster Recovery
-For games that need to operated after launch, server disaster recovery is something the developer should take seriously. This chapter introduces the support of ChanneldUE for disaster recovery.
+For games that need to operated after launch, server disaster recovery is something the developer should take seriously. The crash of a running server can lead to unexpected termination of a MOBA or Battle Royale game, or even rollback of player data and loss of virtual property in an MMORPG. This chapter introduces the support of ChanneldUE for disaster recovery.
 
 ## Dedicated Server
 ChanneldUE supports dedicated servers to recover to the state before the crash point based on the subscriptions and data states stored in the channels. This way, the client does not need to reconnect or restart after the server recovers, ensuring the continuity of the player experience. At the same time, all replicated states will remain consistent before and after the crash, such as the position of players and world bosses. It should be noted that non-replicated states on the server will still be lost, such as the AI's movement target points. If these states also need to be restored after the crash, additional code is needed to achieve this.
