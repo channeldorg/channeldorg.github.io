@@ -63,7 +63,7 @@ var spatialDampingSettings []*SpatialDampingSettings = []*SpatialDampingSettings
 }
 ```
 
-这段代码表示空间频道的同步频率以频道距离衰减，默认为50Hz（距离为0，即同一空间频道），20Hz（距离为1个空间频道），10Hz（距离为2个及以上空间频道）。目前这段参数只能通过修改代码[message_spatial.go](/../../../channeld/blob/master/pkg/channeld/message_spatial.go)来调整。
+这段代码表示空间频道的同步频率以频道距离衰减，默认为50Hz（距离为0，即同一空间频道），20Hz（距离为1个空间频道），10Hz（距离为2个及以上空间频道）。目前这段参数只能通过修改代码[message_spatial.go](https://github.com/channeldorg/channeld/blob/release/pkg/channeld/message_spatial.go)来调整。
 
 ## 扩展兴趣类型
 您的兴趣范围类需要继承自`UAreaOfInterestBase`（不可跟随）或`UPlayerFollowingAOI`（可跟随），并实现虚方法：

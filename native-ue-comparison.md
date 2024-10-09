@@ -1,5 +1,5 @@
 # ChanneldUE and Native UE Comparison
-This chapter describes the differences between ChanneldUE and the native UE networking system. Some of the differences can be solved by alternative solutions, but some of them do not have alternative solutions yet. If your game needs to use these features, please raise an issue in [Issues](/../../issues).
+This chapter describes the differences between ChanneldUE and the native UE networking system. Some of the differences can be solved by alternative solutions, but some of them do not have alternative solutions yet. If your game needs to use these features, please raise an issue in [Issues](https://github.com/channeldorg/channeld-ue-plugin/issues).
 
 ## Conditional Property Replication
 ChanneldUE does not support [Conditional Property Replication](https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/Networking/Actors/Properties/Conditions/) yet.
@@ -9,7 +9,7 @@ This means that all changed properties will be sent from the UE server to the ch
 ## Network Update Frequency
 ChanneldUE supports [Network Update Frequency](https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/Networking/Actors/Properties/#data-driven-type-network-update-frequency).
 
-On the client, the frequency of receiving property update depends on the `FanOutIntervalMs` parameter set when subscribing to the channel, which is 20ms by default, equivalent to 50Hz. The update frequency of the Global channel can be modified by modifying `GlobalChannelFanOutIntervalMs` in the channel data view; the update frequency of the spatial channel decays with the distance of the channel, which is 50Hz (distance is 0, that is, the same spatial channel), 20Hz (distance is 1 spatial channel), 10Hz (distance is 2 or more spatial channels). To change the update frequency of the spatial channel, you need to modify the `spatialDampingSettings` in the code [message_spatial.go](/../../../channeld/blob/master/pkg/channeld/message_spatial.go) of the channeld gateway service.
+On the client, the frequency of receiving property update depends on the `FanOutIntervalMs` parameter set when subscribing to the channel, which is 20ms by default, equivalent to 50Hz. The update frequency of the Global channel can be modified by modifying `GlobalChannelFanOutIntervalMs` in the channel data view; the update frequency of the spatial channel decays with the distance of the channel, which is 50Hz (distance is 0, that is, the same spatial channel), 20Hz (distance is 1 spatial channel), 10Hz (distance is 2 or more spatial channels). To change the update frequency of the spatial channel, you need to modify the `spatialDampingSettings` in the code [message_spatial.go](https://github.com/channeldorg/channeld/blob/release/pkg/channeld/message_spatial.go) of the channeld gateway service.
 
 ## Net Cull Distance
 ChanneldUE does not support the `Net Cull Distance Squared` property of Actor, but it can be used as an alternative solution.

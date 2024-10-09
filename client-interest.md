@@ -64,7 +64,7 @@ var spatialDampingSettings []*SpatialDampingSettings = []*SpatialDampingSettings
 }
 ```
 
-The code means the update frequency of the spatial channel decays with the distance of the channel, which is 50Hz (distance is 0, that is, the same spatial channel), 20Hz (distance is 1 spatial channel), 10Hz (distance is 2 or more spatial channels). To change the update frequency of the spatial channel, you need to modify the `spatialDampingSettings` in the code [message_spatial.go](/../../../channeld/blob/master/pkg/channeld/message_spatial.go).
+The code means the update frequency of the spatial channel decays with the distance of the channel, which is 50Hz (distance is 0, that is, the same spatial channel), 20Hz (distance is 1 spatial channel), 10Hz (distance is 2 or more spatial channels). To change the update frequency of the spatial channel, you need to modify the `spatialDampingSettings` in the code [message_spatial.go](https://github.com/channeldorg/channeld/blob/release/pkg/channeld/message_spatial.go).
 
 # Extending Interest Types
 Your interest area class needs to inherit from `UAreaOfInterestBase` (not followable) or `UPlayerFollowingAOI` (followable), and implement the virtual method:
