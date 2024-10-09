@@ -2,7 +2,7 @@
 ## channeld网关服务
 channeld网关服务是一个独立于UE客户端和服务端运行的进程。理论上，所有网络流量都会经由channeld进行转发或广播。
 
-channeld网关服务使用Go语言编写。ChanneldUE插件的`Setup.bat`初始化脚本会自动克隆[channeld的代码仓库](https://github.com/metaworking/channeld)到插件的`Source/ThirdParty/channeld`目录。如果在运行`Setup.bat`之间已经克隆了channeld的代码仓库，并配置了`%CHANNELD_PATH%`环境变量，则会跳过自动克隆。
+channeld网关服务使用Go语言编写。ChanneldUE插件的`Setup.bat`初始化脚本会自动克隆[channeld的代码仓库](https://github.com/channeldorg/channeld)到插件的`Source/ThirdParty/channeld`目录。如果在运行`Setup.bat`之间已经克隆了channeld的代码仓库，并配置了`%CHANNELD_PATH%`环境变量，则会跳过自动克隆。
 
 强烈建议将channeld和游戏服务器就近部署。如果是在同一集群，不同的物理服务器上，channeld和游戏服务器之间的网络延迟通常只有1-2毫秒；如果是在同一物理服务器上，其延迟会低至几十微秒。真正要考虑的是channeld本身的扇出机制带来的同步延迟。如果订阅时设置的`FanOutIntervalMs`太高，理论上，服务器发给channeld同步消息后，最差的情况下，`FanOutIntervalMs`时间后channeld才会给客户端发送这些同步。在FPS这种对延迟高敏感的游戏项目中，建议将`FanOutIntervalMs`设置为10或更小。
 

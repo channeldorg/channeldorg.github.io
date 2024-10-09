@@ -29,7 +29,7 @@ The following blueprint demonstrates how to handle the channel owner lost and re
 
 ![](images/channel-owner-lost-recovery.png)
 
-This blueprint is located in the [ChanneldUE demo project](https://github.com/metaworking/channeld-ue-demos) at `Content/Blueprints/BP_RecoveryHandler`.
+This blueprint is located in the [ChanneldUE demo project](https://github.com/channeldorg/channeld-ue-demos) at `Content/Blueprints/BP_RecoveryHandler`.
 
 Placing this blueprint in the level can achieve the following effect:
 

@@ -67,7 +67,7 @@ channeld/tps-channeld:latest
 
 部署成功后，会显示Grafana的URL，用于查看服务器的运行状态。默认的用户名和密码都是`admin`。
 
->提示：Grafana会从github下载仪表盘文件。如果集群位于大陆地区，可能会因为网络问题导致下载较慢甚至超时，请耐心等待。超时后，Grafana服务仍能够正常启动，但是仪表盘为空。此时可以在Grafana中手动导入仪表盘文件（[下载地址](https://raw.githubusercontent.com/metaworking/channeld/master/grafana/dashboard.json)）。
+>提示：Grafana会从github下载仪表盘文件。如果集群位于大陆地区，可能会因为网络问题导致下载较慢甚至超时，请耐心等待。超时后，Grafana服务仍能够正常启动，但是仪表盘为空。此时可以在Grafana中手动导入仪表盘文件（[下载地址](https://raw.githubusercontent.com/channeldorg/channeld/master/grafana/dashboard.json)）。
 
 ### 关于Image Pull Secret
 `Image Pull Secret`右侧的`Generate`功能只支持创建基于镜像仓库用户名和密码的Secret。您仍可以使用[kubectl](https://kubernetes.io/zh-cn/docs/concepts/configuration/secret/#creating-a-secret)，或云服务商的控制台创建Secret，然后将其填入`Image Pull Secret`文本框中。

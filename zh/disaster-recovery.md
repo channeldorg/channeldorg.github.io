@@ -28,7 +28,7 @@ ChanneldUE支持专用服务器在崩溃重启后，根据断开前保留在频�
 
 ![](../images/channel-owner-lost-recovery.png)
 
-该蓝图位于[ChanneldUE示例项目](https://github.com/metaworking/channeld-ue-demos)中，路径为`Content/Blueprints/BP_RecoveryHandler`。
+该蓝图位于[ChanneldUE示例项目](https://github.com/channeldorg/channeld-ue-demos)中，路径为`Content/Blueprints/BP_RecoveryHandler`。
 
 将该蓝图放置到关卡中，可以实现如下效果：
 

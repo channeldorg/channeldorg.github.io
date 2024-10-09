@@ -21,6 +21,6 @@
 
 -----
 - **链接**
-  - [Github仓库](https://github.com/metaworking/channeld-ue-plugin)
-  - [示例项目](https://github.com/metaworking/channeld-ue-demos)
-  - [channeld](https://github.com/metaworking/channeld)
+  - [Github仓库](https://github.com/channeldorg/channeld-ue-plugin)
+  - [示例项目](https://github.com/channeldorg/channeld-ue-demos)
+  - [channeld](https://github.com/channeldorg/channeld)

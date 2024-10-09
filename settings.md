@@ -92,4 +92,4 @@ This is the editor settings. Can be found in `Edit > Editor Preferences > Plugin
 | ------ | ------ | ------ |
 | `Automatically Repcompile After Generating Replication Code` | true | Whether to recompile automatically after generating replication code. |
 | `Generated Go Replication Code Storage Folder` | examples/channeld-ue-tps | The path where the generated go-related replication code is stored. Relative path to the environment variable `CHANNELD_PATH`. |
-| `Go Package Import Path Prefix` | github.com/metaworking/channeld/examples/channeld-ue-tps | The go package name used when generating go code and proto. |
+| `Go Package Import Path Prefix` | github.com/channeldorg/channeld/examples/channeld-ue-tps | The go package name used when generating go code and proto. |

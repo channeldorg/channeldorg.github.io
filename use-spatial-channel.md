@@ -97,4 +97,4 @@ Congratulations! So far, you have learned the basic functions of ChanneldUE. If 
 - Control the range of spatila update received by the client
 - Use GameState to replicate properties across multiple spatial servers
 
-You can continue to browse the advanced topics; or you can download the [ChanneldUE demo project](https://github.com/metaworking/channeld-ue-demos).
+You can continue to browse the advanced topics; or you can download the [ChanneldUE demo project](https://github.com/channeldorg/channeld-ue-demos).
