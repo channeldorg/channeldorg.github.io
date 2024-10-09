@@ -5,7 +5,7 @@ ChanneldUE插件目前仅在Windows 10/11操作系统及UE 4.27/5.1/5.2/5.3下�
 ## 1.1.克隆代码仓库
 使用git命令行工具克隆代码仓库到本地：
 ```bash
-git clone https://github.com/metaworking/channeld-ue-plugin.git
+git clone https://github.com/channeldorg/channeld-ue-plugin.git
 ```
 
 ## 1.2.初始化插件

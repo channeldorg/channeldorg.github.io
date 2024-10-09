@@ -84,7 +84,7 @@ After clicking the `Deploy` button, the final YAML file used for `kubectl apply`
 
 After the deployment is successful, the URL of Grafana will be displayed, which can be used to view the running metrics of the server. The default username and password are both `admin`.
 
->Tip: Grafana will download the dashboard file from github. If timeout, the Grafana service can still start normally, but the dashboard is empty. If this is your case, you should manually import the dashboard file in Grafana ([download address](https://raw.githubusercontent.com/metaworking/channeld/master/grafana/dashboard.json)).
+>Tip: Grafana will download the dashboard file from github. If timeout, the Grafana service can still start normally, but the dashboard is empty. If this is your case, you should manually import the dashboard file in Grafana ([download address](https://raw.githubusercontent.com/channeldorg/channeld/master/grafana/dashboard.json)).
 
 ### About Image Pull Secret
 The `Generate` function on the right of `Image Pull Secret` only supports creating Secrets based on the username and password of the image repository. You can still use [kubectl](https://kubernetes.io/docs/concepts/configuration/secret/#creating-a-secret), or the console of the cloud service provider to create Secrets, and then fill them in the `Image Pull Secret` text box.

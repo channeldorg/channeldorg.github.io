@@ -16,11 +16,12 @@
 ** [Comparison with the native UE and alternatives](native-ue-comparison.md)
 ** [Client Interest](client-interest.md)
 ** [Benchmark](benchmark.md)
+** [Disaster Recovery](disaster-recovery.md)
 
 * [Troubleshooting](troubleshooting.md)
 
 -----
 - **Links**
-  - [Github Repo](https://github.com/metaworking/channeld-ue-plugin)
-  - [Example Project](https://github.com/metaworking/channeld-ue-demos)
-  - [channeld](https://github.com/metaworking/channeld)
+  - [Github Repo](https://github.com/channeldorg/channeld-ue-plugin)
+  - [Example Project](https://github.com/channeldorg/channeld-ue-demos)
+  - [channeld](https://github.com/channeldorg/channeld)

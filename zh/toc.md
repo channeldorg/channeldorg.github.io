@@ -15,11 +15,12 @@
 ** [和原生UE的差异以及替代方案](zh/native-ue-comparison.md)
 ** [客户端兴趣](zh/client-interest.md)
 ** [性能测试](zh/benchmark.md)
+** [灾难恢复](zh/disaster-recovery.md)
 
 * [故障排查](zh/troubleshooting.md)
 
 -----
 - **链接**
-  - [Github仓库](https://github.com/metaworking/channeld-ue-plugin)
-  - [示例项目](https://github.com/metaworking/channeld-ue-demos)
-  - [channeld](https://github.com/metaworking/channeld)
+  - [Github仓库](https://github.com/channeldorg/channeld-ue-plugin)
+  - [示例项目](https://github.com/channeldorg/channeld-ue-demos)
+  - [channeld](https://github.com/channeldorg/channeld)

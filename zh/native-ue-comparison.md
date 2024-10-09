@@ -1,5 +1,5 @@
 # ChanneldUE和原生UE的差异
-本章介绍了ChanneldUE和虚幻引擎自带的网络同步机制的差异。部分差异可以通过替代方案解决，但是部分差异目前还没有替代方案。如果你的游戏需要使用这些功能，请在[Issues](https://github.com/metaworking/channeld-ue-plugin/issues)中提出。
+本章介绍了ChanneldUE和虚幻引擎自带的网络同步机制的差异。部分差异可以通过替代方案解决，但是部分差异目前还没有替代方案。如果你的游戏需要使用这些功能，请在[Issues](https://github.com/channeldorg/channeld-ue-plugin/issues)中提出。
 
 ## 条件属性复制
 ChanneldUE尚不支持[条件属性复制](https://docs.unrealengine.com/4.27/zh-CN/InteractiveExperiences/Networking/Actors/Properties/Conditions/)。
@@ -9,7 +9,7 @@ ChanneldUE尚不支持[条件属性复制](https://docs.unrealengine.com/4.27/zh
 ## 网络更新频率
 ChanneldUE支持[网络更新频率](https://docs.unrealengine.com/4.27/zh-CN/InteractiveExperiences/Networking/Actors/Properties/#%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8%E5%9E%8B%E7%BD%91%E7%BB%9C%E6%9B%B4%E6%96%B0%E9%A2%91%E7%8E%87)。
 
-在客户端，收到的属性同步频率取决于订阅频道时设置的`FanOutIntervalMs`参数，默认为20ms，相当于50Hz。全局频道的同步频率可以在频道数据视图中修改`GlobalChannelFanOutIntervalMs`来调整；空间频道的同步频率以频道距离衰减，默认为50Hz（距离为0，即同一空间频道），20Hz（距离为1个空间频道），10Hz（距离为2个及以上空间频道）。若要改变空间频道的同步频率，需要修改channeld网关服务的代码[message_spatial.go](/../../../channeld/blob/master/pkg/channeld/message_spatial.go)中的`spatialDampingSettings`。
+在客户端，收到的属性同步频率取决于订阅频道时设置的`FanOutIntervalMs`参数，默认为20ms，相当于50Hz。全局频道的同步频率可以在频道数据视图中修改`GlobalChannelFanOutIntervalMs`来调整；空间频道的同步频率以频道距离衰减，默认为50Hz（距离为0，即同一空间频道），20Hz（距离为1个空间频道），10Hz（距离为2个及以上空间频道）。若要改变空间频道的同步频率，需要修改channeld网关服务的代码[message_spatial.go](https://github.com/channeldorg/channeld/blob/release/pkg/channeld/message_spatial.go)中的`spatialDampingSettings`。
 
 ## 网络裁剪距离
 ChanneldUE不支持Actor的`Net Cull Distance Squared`属性，但是可以作为替代方案使用。

@@ -1,7 +1,7 @@
 # World Settings
 Since v0.7.4, ChanneldUE comes along with a utility class `ChanneldWorldSettings` that can be used to configure the level-specific launch settings in addition to UE's WorldSettings class.
 
-It is useful for the projects that have multiple levels which have different launch settings such as the `Channel Data View Class` and the `Server Groups`. [ChanneldUE Demos](https://github.com/metaworking/channeld-ue-demos) project is a good example. Before the `ChanneldWorldSettings` existed, every time you open a different level, you may need to manually set the `Channel Data View Class` in the Project Settings and the `Server Groups` in the Editor Preferences. Now, you can override these values in `ChanneldWorldSettings` and save them in the level asset.
+It is useful for the projects that have multiple levels which have different launch settings such as the `Channel Data View Class` and the `Server Groups`. [ChanneldUE Demos](https://github.com/channeldorg/channeld-ue-demos) project is a good example. Before the `ChanneldWorldSettings` existed, every time you open a different level, you may need to manually set the `Channel Data View Class` in the Project Settings and the `Server Groups` in the Editor Preferences. Now, you can override these values in `ChanneldWorldSettings` and save them in the level asset.
 
 To use `ChanneldWorldSettings`, open the Project Settings and navigate to `Engine > General Settings`. Under the `Default Classes` category, set the `World Settings Class` to `ChanneldWorldSettings`. In order to see the changes, you need to restart the editor.
 

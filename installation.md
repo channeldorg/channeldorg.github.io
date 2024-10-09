@@ -5,7 +5,7 @@ ChanneldUE plugin has been tested on Windows 10/11 with UE 4.27/5.1/5.2/5.3. It 
 ## 1.1.Clone the repository
 Clone the repository to your local machine using git:
 ```bash
-git clone https://github.com/metaworking/channeld-ue-plugin.git
+git clone https://github.com/channeldorg/channeld-ue-plugin.git
 ```
 
 ## 1.2.Initialize the plugin
