@@ -14,7 +14,7 @@ ChanneldUE支持[网络更新频率](https://docs.unrealengine.com/4.27/zh-CN/In
 ## 网络裁剪距离
 ChanneldUE不支持Actor的`Net Cull Distance Squared`属性，但是可以作为替代方案使用。
 
-在原生UE中，一个客户端能够被同步到的空间范围由每个网络Actor的`Net Cull Distance Squared`属性来控制，默认为150米的平方。在ChanneldUE中，客户端的兴趣范围（Area of Interest）即客户端订阅的空间频道的集合。客户端能够接收到的最小同步范围是一个空间频道，在[入门指南](zh/getting-started.md)使用的第三人称示例里，为10x10米。
+在原生UE中，一个客户端能够被同步到的空间范围由每个网络Actor的`Net Cull Distance Squared`属性来控制，默认为150米的平方。在ChanneldUE中，客户端的兴趣范围（Area of Interest）即客户端订阅的空间频道的集合。客户端能够接收到的最小同步范围是一个空间频道，在[入门指南](zh/third-person-template.md)使用的第三人称示例里，为10x10米。
 具体的配置方法见[客户端兴趣管理](zh/client-interest.md)文档。
 
 若要实现以玩家为中心的，半径为150米的球型兴趣范围，打开主菜单`编辑 -> 项目设置 -> 插件 -> Channeld -> Spatial -> Client Interest`，添加一个`Client Interest Preset`，设置`Area Type`为**Sphere**，`Radius`为**15000**。

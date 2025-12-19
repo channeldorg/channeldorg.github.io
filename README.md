@@ -16,11 +16,11 @@
 - Support [one-click cloud deployment](cloud-deployment-tool.md).
 
 ## Engine Versions Support Matrix
-| Components | UE 4.27.2 | UE 5.2.1 | UE 5.3.2 |
-| ------ | ------ | ------ |------ |
-| Getting Started | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Demos Project | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Codegen Tool | :white_check_mark: | :white_check_mark: `*` | :white_check_mark: `*` |
-| Cloud Deployment Tool | :white_check_mark: | :x: | :x:
+| Components | UE 4.27.2 | UE 5.3.2 ~ 5.6.1 |
+| ------ | ------ | ------ |
+| Getting Started | :white_check_mark: | :white_check_mark: |
+| Demos Project | :white_check_mark: | :white_check_mark: |
+| Codegen Tool | :white_check_mark: | :white_check_mark: `*` |
+| Cloud Deployment Tool | :white_check_mark: | :x: |
 
-`*` Need to turn off `Live Coding` in order to hot-reload the generated code.
+`*` When `Live Coding` is enabled, the UE editor can compile and load the generated code normally, but other PIE server and client processes will not load the patches, resulting in failure to run normally (see [Troubleshooting](troubleshooting.md?id=failed-to-register-channel-data-type)). Therefore, it is recommended to disable the `Live Coding` feature.

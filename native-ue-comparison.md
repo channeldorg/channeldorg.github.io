@@ -14,7 +14,7 @@ On the client, the frequency of receiving property update depends on the `FanOut
 ## Net Cull Distance
 ChanneldUE does not support the `Net Cull Distance Squared` property of Actor, but it can be used as an alternative solution.
 
-In the native UE, the spatial range that a client can be updated to is controlled by the `Net Cull Distance Squared` property of each replicated Actor, which is 150 meters squared by default. In ChanneldUE, the client's interest range (Area of Interest) is the set of spatial channels subscribed by the client. The minimum spatial range that the client can receive is a spatial channel, which is 10x10 meters in the third-person example used in the [Getting Started](getting-started.md).
+In the native UE, the spatial range that a client can be updated to is controlled by the `Net Cull Distance Squared` property of each replicated Actor, which is 150 meters squared by default. In ChanneldUE, the client's interest range (Area of Interest) is the set of spatial channels subscribed by the client. The minimum spatial range that the client can receive is a spatial channel, which is 10x10 meters in the third-person example used in the [Getting Started](third-person-template.md).
 For specific configuration methods, please refer to the [Client Interest Management](client-interest.md) document.
 
 To achieve a spherical interest area centered on the player with a radius of 150 meters, open the `Project Settings -> Plugins -> Channeld -> Spatial -> Client Interest`, add a `Client Interest Preset`, and set `Area Type` to **Sphere** and `Radius` to **15000**.

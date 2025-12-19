@@ -17,11 +17,11 @@ ChanneldUE是为虚幻引擎专用服务器提供分布式模拟能力的开源�
 - 支持[一键上云](zh/cloud-deployment-tool.md)
 
 ## 引擎版本支持
-| 覆盖功能 | UE 4.27.2 | UE 5.2.1 | UE 5.3.2 |
-| ------ | ------ | ------ |------ |
-| 快速开始文档 | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| 示例项目 | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| 代码生成工具 | :white_check_mark: | :white_check_mark: `*` | :white_check_mark: `*` |
-| 云部署工具 | :white_check_mark: | :x: | :x:
+| 覆盖功能 | UE 4.27.2 | UE 5.3.2 ~ 5.6.1 |
+| ------ | ------ | ------ |
+| 快速开始文档 | :white_check_mark: | :white_check_mark: |
+| 示例项目 | :white_check_mark: | :white_check_mark: |
+| 代码生成工具 | :white_check_mark: | :white_check_mark: `*` |
+| 云部署工具 | :white_check_mark: | :x: |
 
-`*` 需要关闭`实时代码编写`功能才能正常热加载生成的代码。
+`*` 开启`Live Coding`功能后，UE编辑器可以正常编译和加载生成的代码，但是其它PIE服务器和客户端进程不会加载补丁，导致无法正常运行（见[故障排查](zh/troubleshooting.md?id=注册频道数据类型失败)）。因此，建议关闭`Live Coding`功能。
