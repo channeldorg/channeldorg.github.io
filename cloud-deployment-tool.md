@@ -13,7 +13,7 @@ The tools are implemented based on Docker and Kubernetes. It is recommended to l
   - Amazon Elastic Kubernetes Service [EKS](https://aws.amazon.com/eks)
   - Google Kubernetes Engine [GKE](https://cloud.google.com/kubernetes-engine)
   - Microsoft Azure Kubernetes Service [AKS](https://azure.microsoft.com/en-us/services/kubernetes-service)
-  - Alibaba Cloud Container Service [ACK](https://www.aliyun.com/product/containerservice)
+  - Alibaba Cloud Container Service [ACK](https://www.aliyun.com/product/ack)
   - Tencent Cloud Container Service [TKE](https://cloud.tencent.com/product/tke)
 - Container image repository, such as:
   - [Docker Hub](https://hub.docker.com)

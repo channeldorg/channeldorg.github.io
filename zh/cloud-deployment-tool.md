@@ -9,7 +9,7 @@ ChanneldUE提供了一套针对云部署的工具，在进行配置后，可以�
 - [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install)
 - Kubernetes命令行工具[kubectl](https://kubernetes.io/docs/reference/kubectl)
 - 开通基于Kubernetes的云容器服务，例如：
-  - 阿里云容器服务[ACK](https://www.aliyun.com/product/containerservice)
+  - 阿里云容器服务[ACK](https://www.aliyun.com/product/ack)
   - 腾讯云容器服务[TKE](https://cloud.tencent.com/product/tke)
 - 开通容器镜像仓库，例如：
   - 阿里云容器镜像服务[ACR](https://www.aliyun.com/product/acr)

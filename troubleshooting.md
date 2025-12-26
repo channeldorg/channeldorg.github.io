@@ -10,8 +10,10 @@ If you need to download and install channeld to the plugin directory, please del
 
 ## The game server automatically exits after startup
 - Check if the channeld service is running normally. When the channeld networking (`Enable Channeld Networking`) is enabled, the game server will try to connect to the channeld service. If the connection fails, the game server will automatically exit;
-- Make sure that [Live Coding](https://docs.unrealengine.com/5.0/en-US/using-live-coding-to-recompile-unreal-engine-applications-at-runtime/) is turned off, otherwise `Error: Failed to register channel data type by name` will appear in the log;
 - If the above methods still cannot solve the problem, please check the log of the game server. The log file is usually named after the project name_{number} under the project directory. In single server mode, the number 2 is the game server log; in multi-server mode, the number 2 is the main server log, and the number starts from 3 is the space server log.
+
+## Failed to register channel data type
+Confirm that the setting of [Live Coding](https://dev.epicgames.com/documentation/en-us/unreal-engine/using-live-coding-to-recompile-unreal-engine-applications-at-runtime) is turned off, otherwise `Error: Failed to register channel data type by name` will appear in the log.
 
 ## Unable to save Blueprint
 If the error message "Unable to save asset" appears, it is usually because the game server is still running, causing the Blueprint file to be occupied. Please stop the game server before saving the Blueprint.
